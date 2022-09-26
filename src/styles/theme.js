@@ -1,0 +1,17 @@
+export default {
+    COLORS: {
+        BACKGROUND_PRIMARY: "#1C1B1E",
+        BACKGROUND_SECONDARY: "#FF859B",
+
+        PRIMARY_FONT: "#F4EDE8",
+        SECONDARY_FONT: "#FF859B",
+
+        BACKGROUND_PRIMARY_INPUT: "#262529",
+        PLACEHOLDER_PRIMARY: "#948F99",
+
+        BUTTON_PRIMARY: "#312E38",
+        BUTTON_SECONDARY: "#948F99",
+
+        BORDER_PRIMARY: "#3E3B47"
+    }
+}
