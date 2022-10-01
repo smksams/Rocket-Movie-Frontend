@@ -13,6 +13,7 @@ export const Container = styled.div`
 
     > input {
         background: none;
+        width: 100%;
 
 
         &::placeholder {

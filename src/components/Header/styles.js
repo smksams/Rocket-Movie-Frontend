@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    grid-area: header;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -13,6 +14,7 @@ export const Container = styled.div`
 `;
 
 export const Brand = styled.h1`
+    cursor: pointer;
     font-style: normal;
     font-weight: 700;
     font-size: 2.4rem;
@@ -32,12 +34,17 @@ export const Profile = styled.div`
         align-items: flex-end;
         width: 12.5rem;
 
+        strong {
+            cursor: pointer;
+        }
+
         button {
             color: ${({ theme }) => theme.COLORS.BUTTON_SECONDARY};
         }
     }
 
     > img {
+        cursor: pointer;
         width: 6.4rem;
         height: 6.4rem;
         border-radius: 50%;

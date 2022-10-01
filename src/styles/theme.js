@@ -5,13 +5,20 @@ export default {
 
         PRIMARY_FONT: "#F4EDE8",
         SECONDARY_FONT: "#FF859B",
+        PRIMARY_FONT_NOTE: "#F4EDE8",
+        SECONDARY_FONT_NOTE: "#999591",
 
         BACKGROUND_PRIMARY_INPUT: "#262529",
         PLACEHOLDER_PRIMARY: "#948F99",
 
         BUTTON_PRIMARY: "#312E38",
         BUTTON_SECONDARY: "#948F99",
+        NOTE_PRIMARY: "rgba(255, 133, 155, 0.05)",
+        
 
-        BORDER_PRIMARY: "#3E3B47"
+        BORDER_PRIMARY: "#3E3B47",
+        DARK: "#0D0C0F"
     }
+
 }
+

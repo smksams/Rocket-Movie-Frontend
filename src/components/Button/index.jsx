@@ -1,8 +1,9 @@
 import { Container } from './styles';
 
-export function Button({icon: Icon, title, ...rest }) {
+export function Button({isDark, icon: Icon, title, ...rest }) {
     return (
         <Container 
+        isDark={isDark}
         type='button'
         {...rest}
         >
