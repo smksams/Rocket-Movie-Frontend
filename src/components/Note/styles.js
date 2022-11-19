@@ -9,6 +9,10 @@ export const Container = styled.div`
     margin-bottom: 2.4rem;
 
     border-radius: 1.6rem;
+    
+    &:hover {
+        cursor: pointer;
+    }
 
     > h3 {
         margin-bottom: .8rem;

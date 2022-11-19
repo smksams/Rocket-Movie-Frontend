@@ -1,12 +1,14 @@
 import { Container, Form, Background } from './styles';
 import { FiMail, FiLock } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 import { ButtonText } from '../../components/ButtonText';
 
-
 export function SignIn() {
+    const navigate = useNavigate()
+
     return (
         <Container>
             <Form>
@@ -19,7 +21,7 @@ export function SignIn() {
                 <Input icon={FiLock} placeholder='Senha' />
 
                 <Button className='login-button' title='Entrar' />
-                <ButtonText className='text-button' title='Criar conta' />
+                <ButtonText onClick={() => navigate('/register')} className='text-button' title='Criar conta' />
 
             </Form>
 

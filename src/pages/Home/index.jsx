@@ -4,15 +4,17 @@ import { FiPlus } from 'react-icons/fi'
 import { Header } from '../../components/Header';
 import { Button } from '../../components/Button'
 import { Note } from '../../components/Note'
+import { useNavigate } from 'react-router-dom';
 
 export function Home() {
+    const navigate = useNavigate()
     return (
         <Container>
             <Header />
 
             <Section>
                 <h1>Meus filmes</h1>
-                <Button icon={FiPlus} title='Adicionar filme' />
+                <Button onClick={() => navigate('new')} icon={FiPlus} title='Adicionar filme' />
             </Section>
 
 
@@ -27,6 +29,7 @@ export function Home() {
                                 { id: '2', name: 'Aventura' }
                             ]
                         }}
+                        onClick={() => navigate('/details/1')}
                     />
 
                     <Note

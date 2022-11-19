@@ -8,11 +8,12 @@ import { Button } from '../../components/Button';
 import { NoteItem } from '../../components/NoteItem';
 
 export function New() {
+
     return (
         <Container>
             <Header />
             <Section>
-                <ButtonText icon={FiArrowLeft} title='Voltar' />
+                <ButtonText navigation={-1} icon={FiArrowLeft} title='Voltar' />
 
 
                 <h1>Novo filme</h1>

@@ -11,7 +11,7 @@ export function Details() {
         <Container>
             <Header />
             <Section>
-                <ButtonText icon={FiArrowLeft} title='Voltar' />
+                <ButtonText navigation={-1} icon={FiArrowLeft} title='Voltar' />
 
                 <Main>
                     <h1>Interestellar</h1>

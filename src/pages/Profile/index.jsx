@@ -9,7 +9,7 @@ export function Profile() {
     return(
         <Container>
             <HeaderProfile>
-                <ButtonText icon={FiArrowLeft} title='Voltar' />
+                <ButtonText navigation={-1} icon={FiArrowLeft} title='Voltar' />
             </HeaderProfile>
 
                 <User>
