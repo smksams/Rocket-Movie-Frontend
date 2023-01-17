@@ -18,7 +18,6 @@ function AuthProvider({ children }) {
             api.defaults.headers.authorization = 'Bearer ' + token
             setData({ user, token })
             
-            console.log(response)
         } catch (error) {
             if (error.response) {
                 alert(error.response.data.message)
@@ -27,6 +26,12 @@ function AuthProvider({ children }) {
             }
         }
 
+    }
+
+    function singOut() {
+        localStorage.removeItem('@movieNotes:token')
+        localStorage.removeItem('@movieNotes:user')
+        setData({})
     }
 
     useEffect(() => {
@@ -45,7 +50,10 @@ function AuthProvider({ children }) {
 
 
     return (
-        <AuthContext.Provider value={{ singIn, user: data.user }} >
+        <AuthContext.Provider value={{ 
+            singIn,
+            singOut, 
+            user: data.user }} >
             {children}
         </AuthContext.Provider>
     )
